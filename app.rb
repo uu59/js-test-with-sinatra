@@ -6,6 +6,7 @@ Bundler.setup
 Bundler.require
 require "sinatra/reloader" if development?
 
+Tilt.register  Tilt::StringTemplate, "html"
 set :run, true
 set :inline_templates, true
 set :layout, true
